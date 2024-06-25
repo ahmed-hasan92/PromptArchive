@@ -12,8 +12,8 @@ const textGeneratorRoutes = require("./api/textGenerator/textGenerator.routes");
 require("dotenv").config();
 const port = process.env.PORT;
 const corsOptions = {
-  origin: "*",
-  methods: "GET,POST,PUT,DELETE",
+  origin: "*", // Allow requests from any origin
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
 };
 const app = express();
